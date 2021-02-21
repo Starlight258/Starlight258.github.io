@@ -1,0 +1,157 @@
+body {
+  background-color: #34495e;
+  color: floralwhite;
+  height: 100vh;
+  width: 200vh;
+  overflow: hidden;
+}
+.form {
+  text-align: center;
+}
+.askName {
+  text-align: center;
+}
+.clock {
+  text-align: center;
+  font-size: 50px;
+  height: 50px 5vh;
+}
+.greeting {
+  vertical-align: bottom;
+  text-align: center;
+  height: 5vh;
+  font-size: 25px;
+}
+.box {
+  text-align: center;
+}
+#todoForm {
+  text-align: center;
+  align-items: center;
+}
+#pp,
+#js-pending,
+#js-finished,
+#ff {
+  text-align: center;
+  align-items: center;
+  width: 175vh;
+  align-self: center;
+}
+#tt {
+  height: 40px;
+  width: 200vh;
+  text-align: center;
+}
+
+#js-pending,
+#js-finished {
+  text-align: start;
+  width: 190vh;
+  margin-inline-start: 88vh;
+  line-height: 4.5vh;
+}
+#heart {
+  width: 198vh;
+  line-height: 40px;
+}
+li {
+  list-style-type: square;
+}
+.form,
+.greeting,
+#bg  {
+  display: none;
+}
+.showing {
+  display: block;
+}
+.box {
+  color: darkolivegreen;
+  align-items: center;
+}
+#ff {
+  margin-bottom: 1%;
+}
+.weather {
+  margin-inline-start: 199vh;
+  margin-bottom: 30%;
+}
+.place {
+  display: inline-block;
+  font-size: 12px;
+  margin-inline-start: 197vh;
+  line-height: 1vh;
+}
+@media screen and (max-width: 900px) {
+  body {
+    height: 80vh;
+    width: 110vh;
+  }
+  .greeting {
+    font-size: 20px;
+  }
+  #js-pending,
+  #js-finished {
+    margin-inline-start: 40vh;
+  }
+  #pp,
+  #ff {
+    width: 70vh;
+  }
+  #tt {
+    width: 110vh;
+  }
+  .clock {
+    font-size: 20px;
+  }
+  #heart {
+    width: 110vh;
+  }
+}
+@media screen and (max-width: 550px) {
+  body {
+    height: 80vh;
+    width: 100vh;
+  }
+  #tt {
+    width: 100vh;
+  }
+  .clock,
+  .greeting {
+    display: none;
+  }
+  .box {
+    line-height: 3vh;
+  }
+  #todoForm {
+    padding: 20px;
+  }
+  #pp,
+  #ff {
+    font-size: 3vh;
+    width: 60vh;
+  }
+  #js-pending,
+  #js-finished {
+    font-size: 4vh;
+    margin-inline-start: 30vh;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
